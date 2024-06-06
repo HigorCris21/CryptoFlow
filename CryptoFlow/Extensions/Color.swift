@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-// Extensão da classe Color para adicionar um tema de cores personalizado
+// Extensão para adicionar um tema de cores personalizado
 extension Color {
     
     // Propriedade estática para acessar o tema de cores
