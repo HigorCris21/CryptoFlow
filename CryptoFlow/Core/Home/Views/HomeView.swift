@@ -17,6 +17,7 @@ struct HomeView: View {
             Color.theme.background
                 .ignoresSafeArea()
             
+            
             //Conteúdo
             VStack {
                 
