@@ -7,7 +7,8 @@
 
 import Foundation
 
-/*CoinGecko PI info https://api.congecko.com/api/v3/coins/markets?vs_currency=usd&order-market_cap_desc&per_pege=2505page=16sparkLine=truesprice_change_percentage=24h
+//CoinGecko PI info
+/* https://api.congecko.com/api/v3/coins/markets?vs_currency=usd&order-market_cap_desc&per_pege=2505page=16sparkLine=truesprice_change_percentage=24h
  */
 
 /*JSON Response
@@ -126,6 +127,14 @@ struct CoinModel: Identifiable, Codable {
                          sparklineIn7D: sparklineIn7D,
                          priceChangePercentage24HInCurrency: priceChangePercentage24HInCurrency,
                          currentHoldings: amount)
+    }
+    
+    var currentHoldingsValue: Double {
+        return (currentHoldings ?? 0) * currentPrice
+    }
+    
+    var rank: Int {
+        return Int(marketCapRank ?? 0)
     }
 }
 
