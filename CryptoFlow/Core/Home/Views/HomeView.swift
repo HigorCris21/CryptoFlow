@@ -28,15 +28,14 @@ struct HomeView: View {
                 homeHeader
                 
                 if !showPortfolio {
-                    // Lista que exibe as informações das moedas
-                    List {
-                        ForEach(vm.allCoins) { coin in
-                            CoinRowView(coin: coin,
-                                        showHoldingsColumn: false)
-                        }
-                    }
-                    .listStyle(PlainListStyle())
-                    .transition(.move(edge: .leading))
+                    allCoinsList
+                        .transition(.move(edge: .leading))
+                }
+                if showPortfolio {
+                    portfolioCoinsLista
+                        .transition(.move(edge: .leading))
+                        
+                    
                 }
                 Spacer(minLength: 0)
             }
@@ -81,7 +80,42 @@ extension HomeView {
         }
         .padding(.horizontal)
     }
+    
+    private var allCoinsList: some View {
+        // Lista que exibe as informações das moedas
+        List {
+            ForEach(vm.allCoins) { coin in
+                CoinRowView(coin: coin,
+                            showHoldingsColumn: false)
+                .listRowInsets(.init(top: 10,
+                                     leading: 0,
+                                     bottom: 10,
+                                     trailing: 10))
+            }
+        }
+        .listStyle(PlainListStyle())
+    }
+    
+    private var portfolioCoinsLista: some View {
+        // Lista que exibe as informações das moedas do portifólio
+        List {
+            ForEach(vm.portifolioCoins) { coin in
+                CoinRowView(coin: coin,
+                            showHoldingsColumn: true)
+                .listRowInsets(.init(top: 10,
+                                     leading: 0,
+                                     bottom: 10,
+                                     trailing: 10))
+            }
+        }
+        .listStyle(PlainListStyle())
+    }
 }
+
+
+
+
+
 
 // Pré-visualização para o canvas
 
