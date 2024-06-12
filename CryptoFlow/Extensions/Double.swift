@@ -9,7 +9,7 @@ import Foundation
 
 extension Double {
 
-    private var currencyFormatter6: NumberFormatter {
+    private var currencyFormatter2: NumberFormatter {
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
@@ -17,15 +17,15 @@ extension Double {
         formatter.currencyCode = "BRL"
         formatter.currencySymbol = "R$"
         formatter.minimumFractionDigits = 2
-        formatter.maximumFractionDigits = 6
+        formatter.maximumFractionDigits = 2
         
         
         return formatter
     }
     
-    func asCurrencyWith6Decimals() -> String {
+    func asCurrencyWith2Decimals() -> String {
         let number = NSNumber(value: self)
-        return currencyFormatter6.string(from: number) ?? "R$0.00"
+        return currencyFormatter2.string(from: number) ?? "R$0.00"
     }
     
     func asNumberString() -> String {
