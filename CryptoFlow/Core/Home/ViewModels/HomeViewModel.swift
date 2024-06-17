@@ -16,6 +16,7 @@ class HomeViewModel: ObservableObject {
     // Lista de moedas que estão no portfólio, também observável
     @Published var portifolioCoins: [CoinModel] = []
     
+    
     // Construtor da classe
     init() {
         // Adiciona uma moeda de exemplo à lista após 2 segundos
