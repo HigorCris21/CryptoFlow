@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 // Define um ViewModel para a tela inicial do app
 class HomeViewModel: ObservableObject {
@@ -15,14 +16,22 @@ class HomeViewModel: ObservableObject {
     
     // Lista de moedas que estão no portfólio, também observável
     @Published var portifolioCoins: [CoinModel] = []
+
+    private let dataService = CoinDataService()
+    private var cancellables = Set<AnyCancellable>()
     
     
     // Construtor da classe
     init() {
-        // Adiciona uma moeda de exemplo à lista após 2 segundos
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.allCoins.append(DeveloperPreview.instance.coin)
-            self.portifolioCoins.append(DeveloperPreview.instance.coin)
-        }
+        addSubscribers()
+    }
+    
+    func addSubscribers() {
+        dataService.$allCoins
+            .sink { [weak self] (returnedCoins) in
+                self?.allCoins = returnedCoins
+            }
+            .store(in: &cancellables)
+        
     }
 }

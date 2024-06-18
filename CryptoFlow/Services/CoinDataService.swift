@@ -27,7 +27,7 @@ class CoinDataService {
         
         // Tenta criar um URL a partir de uma string.
         // Se falhar, a função retorna sem fazer nada.
-        guard let url = URL(string: "https://api.congecko.com/api/v3/coins/markets?vs_currency=usd&order-market_cap_desc&per_pege=2505page=16sparkLine=truesprice_change_percentage=24h)") else { return }
+        guard let url = URL(string:     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkLine=truesprice_change_percentage=24h)") else { return }
         
         // Cria um publisher que faz a requisição de rede.
         coinSubscription = URLSession.shared.dataTaskPublisher(for: url)
