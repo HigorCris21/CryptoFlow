@@ -30,20 +30,8 @@ class CoinDataService {
         guard let url = URL(string:     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkLine=truesprice_change_percentage=24h)") else { return }
         
         // Cria um publisher que faz a requisição de rede.
-        coinSubscription = URLSession.shared.dataTaskPublisher(for: url)
-            // Define que a tarefa deve começar numa fila de fundo.
-            .subscribe(on: DispatchQueue.global(qos: .default))
-            // Tenta mapear a resposta para verificar se o status é de sucesso.
-            .tryMap { (output) -> Data in
-                guard let response = output.response as? HTTPURLResponse,
-                      response.statusCode >= 200 && response.statusCode < 300 else {
-                    throw URLError(.badServerResponse)
-                }
-                // Retorna os dados se o status for bem-sucedido.
-                return output.data
-            }
-            // Recebe os dados na fila principal para atualizar a interface do usuário.
-            .receive(on: DispatchQueue.main)
+        coinSubscription = NetworkingManager.download(url: url)
+        
             // Decodifica os dados recebidos em um array de `CoinModel`.
             .decode(type: [CoinModel].self, decoder: JSONDecoder())
             // `sink` lida com a conclusão da requisição e os valores recebidos.

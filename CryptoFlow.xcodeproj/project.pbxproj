@@ -24,6 +24,7 @@
 		EBB61D462C110DF400CE51A0 /* CryptoFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB61D452C110DF400CE51A0 /* CryptoFlowUITests.swift */; };
 		EBB61D482C110DF400CE51A0 /* CryptoFlowUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB61D472C110DF400CE51A0 /* CryptoFlowUITestsLaunchTests.swift */; };
 		EBD66A732C20F54100674F52 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD66A722C20F54100674F52 /* CoinDataService.swift */; };
+		EBE330EF2C2353C70099299D /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE330EE2C2353C70099299D /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		EBB61D452C110DF400CE51A0 /* CryptoFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoFlowUITests.swift; sourceTree = "<group>"; };
 		EBB61D472C110DF400CE51A0 /* CryptoFlowUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoFlowUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EBD66A722C20F54100674F52 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
+		EBE330EE2C2353C70099299D /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				EBB61D2A2C110DF300CE51A0 /* CryptoFlowApp.swift */,
+				EBE330ED2C23537A0099299D /* Utilities */,
 				EB32D1CD2C1124DE00339EDE /* Extensions */,
 				EBD66A712C20F50B00674F52 /* Services */,
 				EB4548172C18EE640032B802 /* Models */,
@@ -227,6 +230,14 @@
 				EBD66A722C20F54100674F52 /* CoinDataService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		EBE330ED2C23537A0099299D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EBE330EE2C2353C70099299D /* NetworkingManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +378,7 @@
 				EBB61D2B2C110DF300CE51A0 /* CryptoFlowApp.swift in Sources */,
 				EB32D1DA2C1152AB00339EDE /* CircleButtonView.swift in Sources */,
 				EB32D1CF2C112F5800339EDE /* Color.swift in Sources */,
+				EBE330EF2C2353C70099299D /* NetworkingManager.swift in Sources */,
 				EB32D1DC2C115C5600339EDE /* CircleButtonAnimationView.swift in Sources */,
 				EB45481D2C1909F60032B802 /* PreviewProvider.swift in Sources */,
 				EB45481F2C1930290032B802 /* Double.swift in Sources */,
