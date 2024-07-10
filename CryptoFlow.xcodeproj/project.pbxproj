@@ -27,6 +27,7 @@
 		EBE330EF2C2353C70099299D /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE330EE2C2353C70099299D /* NetworkingManager.swift */; };
 		EBF8C2022C3ECBE60024D2A4 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8C2012C3ECBE60024D2A4 /* CoinImageView.swift */; };
 		EBF8C2042C3EDCB30024D2A4 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8C2032C3EDCB30024D2A4 /* CoinImageService.swift */; };
+		EBF8C2062C3EF8AD0024D2A4 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8C2052C3EF8AD0024D2A4 /* CoinImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		EBE330EE2C2353C70099299D /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		EBF8C2012C3ECBE60024D2A4 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		EBF8C2032C3EDCB30024D2A4 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
+		EBF8C2052C3EF8AD0024D2A4 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				EBF8C2012C3ECBE60024D2A4 /* CoinImageView.swift */,
+				EBF8C2052C3EF8AD0024D2A4 /* CoinImageViewModel.swift */,
 			);
 			path = CoinImage;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				EB32D1CF2C112F5800339EDE /* Color.swift in Sources */,
 				EBE330EF2C2353C70099299D /* NetworkingManager.swift in Sources */,
 				EB32D1DC2C115C5600339EDE /* CircleButtonAnimationView.swift in Sources */,
+				EBF8C2062C3EF8AD0024D2A4 /* CoinImageViewModel.swift in Sources */,
 				EB45481D2C1909F60032B802 /* PreviewProvider.swift in Sources */,
 				EB45481F2C1930290032B802 /* Double.swift in Sources */,
 				EBF8C2042C3EDCB30024D2A4 /* CoinImageService.swift in Sources */,

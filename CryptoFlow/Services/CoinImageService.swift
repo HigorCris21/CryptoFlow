@@ -13,22 +13,25 @@ class CoinImageService {
     
     @Published var image: UIImage? = nil
     
-    var imageSubscription: AnyCancellable?
+    private var imageSubscription: AnyCancellable?
+    private let coin: CoinModel
     
-    init() {
-//        getCoinImage()
+    init(coin: CoinModel) {
+        self.coin = coin
+        getCoinImage()
     }
     
-    private func getCoinImage(urlString: String) {
-        guard let url = URL(string: urlString) else { return }
+    private func getCoinImage() {
+        guard let url = URL(string: coin.image) else { return }
         
         imageSubscription = NetworkingManager.download(url: url)
-            .decode(type: [CoinModel].self, decoder: JSONDecoder())
-            .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] (returnCoins) in
-                self?.allCoins = returnCoins
-                self?.coinSubscription?.cancel()
+            .tryMap({ (data) -> UIImage? in
+                return UIImage(data: data)
             })
-        
-    }
     
+            .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] (returnedImage) in
+                self?.image = returnedImage
+                self?.imageSubscription?.cancel()
+            })
+    }
 }
