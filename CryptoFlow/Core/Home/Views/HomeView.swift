@@ -60,7 +60,7 @@ extension HomeView {
             Spacer()
             
             // Texto que muda conforme o estado de showPortfolio
-            Text(showPortfolio ? "Portifólio" : "Cotações ao Vivo")
+            Text(showPortfolio ? "Portifolio" : "Live Prices")
                 .font(.headline)
                 .fontWeight(.heavy)
                 .foregroundColor(Color.theme.accent)
