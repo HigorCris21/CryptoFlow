@@ -28,6 +28,7 @@
 		EBF8C2022C3ECBE60024D2A4 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8C2012C3ECBE60024D2A4 /* CoinImageView.swift */; };
 		EBF8C2042C3EDCB30024D2A4 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8C2032C3EDCB30024D2A4 /* CoinImageService.swift */; };
 		EBF8C2062C3EF8AD0024D2A4 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8C2052C3EF8AD0024D2A4 /* CoinImageViewModel.swift */; };
+		EBF8C2082C3F1C1E0024D2A4 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8C2072C3F1C1E0024D2A4 /* LocalFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		EBF8C2012C3ECBE60024D2A4 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		EBF8C2032C3EDCB30024D2A4 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		EBF8C2052C3EF8AD0024D2A4 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
+		EBF8C2072C3F1C1E0024D2A4 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				EBE330EE2C2353C70099299D /* NetworkingManager.swift */,
+				EBF8C2072C3F1C1E0024D2A4 /* LocalFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				EB45481B2C1909660032B802 /* CoinRowView.swift in Sources */,
 				EB4A4E532C1A297C003F4457 /* HomeViewModel.swift in Sources */,
 				EBB61D2D2C110DF300CE51A0 /* ContentView.swift in Sources */,
+				EBF8C2082C3F1C1E0024D2A4 /* LocalFileManager.swift in Sources */,
 				EB32D1D62C114F9600339EDE /* HomeView.swift in Sources */,
 				EBF8C2022C3ECBE60024D2A4 /* CoinImageView.swift in Sources */,
 				EBB61D2B2C110DF300CE51A0 /* CryptoFlowApp.swift in Sources */,
