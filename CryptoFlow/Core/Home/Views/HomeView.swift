@@ -27,6 +27,8 @@ struct HomeView: View {
                 // Cabeçalho da tela
                 homeHeader
                 
+                SearchBarView(searchText: $vm.searchText)
+                
                 if !showPortfolio {
                     allCoinsList
                         .transition(.move(edge: .leading))

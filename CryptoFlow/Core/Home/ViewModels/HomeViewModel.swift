@@ -16,6 +16,8 @@ class HomeViewModel: ObservableObject {
     
     // Lista de moedas que estão no portfólio, também observável
     @Published var portifolioCoins: [CoinModel] = []
+    
+    @Published var searchText: String = ""
 
     private let dataService = CoinDataService()
     private var cancellables = Set<AnyCancellable>()

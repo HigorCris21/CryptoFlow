@@ -30,6 +30,7 @@
 		EBF8C2042C3EDCB30024D2A4 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8C2032C3EDCB30024D2A4 /* CoinImageService.swift */; };
 		EBF8C2062C3EF8AD0024D2A4 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8C2052C3EF8AD0024D2A4 /* CoinImageViewModel.swift */; };
 		EBF8C2082C3F1C1E0024D2A4 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF8C2072C3F1C1E0024D2A4 /* LocalFileManager.swift */; };
+		EBFBE19F2C485BA3007F1266 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFBE19E2C485BA3007F1266 /* UIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		EBF8C2032C3EDCB30024D2A4 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		EBF8C2052C3EF8AD0024D2A4 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		EBF8C2072C3F1C1E0024D2A4 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		EBFBE19E2C485BA3007F1266 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				EB32D1CE2C112F5800339EDE /* Color.swift */,
 				EB45481C2C1909F60032B802 /* PreviewProvider.swift */,
 				EB45481E2C1930290032B802 /* Double.swift */,
+				EBFBE19E2C485BA3007F1266 /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				EB32D1D62C114F9600339EDE /* HomeView.swift in Sources */,
 				EBF8C2022C3ECBE60024D2A4 /* CoinImageView.swift in Sources */,
 				EBB61D2B2C110DF300CE51A0 /* CryptoFlowApp.swift in Sources */,
+				EBFBE19F2C485BA3007F1266 /* UIApplication.swift in Sources */,
 				EB32D1DA2C1152AB00339EDE /* CircleButtonView.swift in Sources */,
 				EB32D1CF2C112F5800339EDE /* Color.swift in Sources */,
 				EB175F6D2C4819EF003BC7CB /* SearchBarView.swift in Sources */,
