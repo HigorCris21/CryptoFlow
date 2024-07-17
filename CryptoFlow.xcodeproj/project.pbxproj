@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB175F6D2C4819EF003BC7CB /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB175F6C2C4819EF003BC7CB /* SearchBarView.swift */; };
 		EB32D1CF2C112F5800339EDE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32D1CE2C112F5800339EDE /* Color.swift */; };
 		EB32D1D62C114F9600339EDE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32D1D52C114F9600339EDE /* HomeView.swift */; };
 		EB32D1DA2C1152AB00339EDE /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB32D1D92C1152AB00339EDE /* CircleButtonView.swift */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB175F6C2C4819EF003BC7CB /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		EB32D1CE2C112F5800339EDE /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		EB32D1D52C114F9600339EDE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EB32D1D92C1152AB00339EDE /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				EBF8C2002C3ECBC70024D2A4 /* CoinImage */,
 				EB32D1D82C11529500339EDE /* CircleButton */,
+				EB175F6C2C4819EF003BC7CB /* SearchBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				EBB61D2B2C110DF300CE51A0 /* CryptoFlowApp.swift in Sources */,
 				EB32D1DA2C1152AB00339EDE /* CircleButtonView.swift in Sources */,
 				EB32D1CF2C112F5800339EDE /* Color.swift in Sources */,
+				EB175F6D2C4819EF003BC7CB /* SearchBarView.swift in Sources */,
 				EBE330EF2C2353C70099299D /* NetworkingManager.swift in Sources */,
 				EB32D1DC2C115C5600339EDE /* CircleButtonAnimationView.swift in Sources */,
 				EBF8C2062C3EF8AD0024D2A4 /* CoinImageViewModel.swift in Sources */,
